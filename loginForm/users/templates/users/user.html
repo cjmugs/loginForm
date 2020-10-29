@@ -1,11 +1,19 @@
 {% extends "users/layout.html" %}
 {% load static %}
-
-
+   
 {% block body %}
+    <head>
+        <script>
+            function welcome(){
+                alert("Are you sure you want to log off?");
+            }
+        </script>
+    </head>
     <h1>Welcome to Melanie's Web Page</h1>  
     {% csrf_token %}
-    <a href="{% url 'logout' %}" class="logout">Log Out</a>
+    
+    <a href="{% url 'logout' %}" onclick="welcome()" class="logout">Click Here to log Out</a>
+
     <div>
         <a id="youtube" class="youtube" href="https://www.youtube.com/channel/UCS67jQCXY3PTAWfHtAmr_Mw?guided_help_flow=3">Visit My Youtube Channel</a>
     </div>
