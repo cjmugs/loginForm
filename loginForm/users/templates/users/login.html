@@ -1,0 +1,17 @@
+{% extends "users/layout.html" %}
+{% load static %}
+ <link href="{% static 'Form/styles.css' %}" type="text/css" rel="stylesheet">
+
+{% block body %}
+    <h1>Melanie's Login Page</h1>
+  
+
+    <form action="{% url 'login' %}"class="form" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form> 
+    <p id="five" class="five">DISCLAIMER This site has been created for the sole use by Melanie Mugavero and 
+        No one else.</p>
+{% endblock %}

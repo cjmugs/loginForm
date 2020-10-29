@@ -3,16 +3,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 62px;
     color: rgb(218, 83, 173);
-}
+}   
 .body{
     background-color: rgb(125, 242, 250);
-}
-.one{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px; 
-    position: relative; top: -5px;
-    color: rgb(218, 83, 173)
 }
 .five{
     text-align: center;
@@ -23,4 +16,16 @@
 .log{
     text-align: center;
     position: relative; top: -50px;
+}
+.logon{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(218, 83, 173);
+    position: relative; top: -55px;
+}
+.cite_name {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(218, 83, 173);
+    font-size: 62px;
 }
